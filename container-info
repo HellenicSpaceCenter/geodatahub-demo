@@ -1,0 +1,3 @@
+
+REPOSITORY=hsc/jupyterlab
+TAG=`date -u +%Y.%m.%d.%H.%M`
