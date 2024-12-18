@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: eoepca/jupyterlab
+    image: hsc/jupyterlab
     ports:
     - "8888:8888"
     volumes:
