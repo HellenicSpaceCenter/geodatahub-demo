@@ -1,0 +1,71 @@
+{
+  "id": "Airbus",
+  "type": "Collection",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/eo/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/view/v1.0.0/schema.json"
+  ],
+  "stac_version": "1.1.0",
+  "description": "Airbus collection",
+  "title": "Airbus Collection",
+  "keywords": [
+    "Airbus",
+    "Pleiades Neo",
+    "collection"
+  ],
+  "providers": [
+    {
+      "name": "Airbus, SE",
+      "description": "Pléiades satellites deliver high-resolution optical imagery, providing detailed and precise data Ideal for precision mapping and in-depth Intelligence.",
+      "roles": [
+        "producer",
+        "processor"
+      ],
+      "url": "https://www.airbus.com/en/products-services/space/earth-observation/satellite-imagery"
+    }
+  ],
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          19.2477876,
+          34.7006096,
+          29.7296986,
+          41.7488862
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-12-11T22:38:32.125Z",
+          "2020-12-14T18:02:31.437Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "links": [
+    {
+      "rel": "root",
+      "href": "https://catalogue.dev-1.hsc.eofarm.com/collections/",
+      "type": "application/json",
+      "title": "Root Catalogue"
+    },
+    {
+      "rel": "self",
+      "href": "https://catalogue.dev-1.hsc.eofarm.com/collections/Airbus",
+      "type": "application/json"
+    }
+  ],
+  "assets": {
+    "thumbnail":
+    {
+      "href": "https://space.skyrocket.de/img_sat/pleiades-neo__1.jpg",
+      "type": "image/jpeg", 
+      "title": "Airbus collection thumbnail",
+      "roles": ["thumbnail"]
+    }
+  }
+}
