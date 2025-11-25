@@ -1,0 +1,71 @@
+{
+  "id": "PlanetScope",
+  "type": "Collection",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/eo/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/view/v1.0.0/schema.json"
+  ],
+  "stac_version": "1.1.0",
+  "description": "PlanetScope collection",
+  "title": "PlanetScope Collection",
+  "keywords": [
+    "PlanetScope",
+    "Planet Labs",
+    "collection"
+  ],
+  "providers": [
+    {
+      "name": "Planet Labs, Inc",
+      "description": "The Planet medium-resolution fleet, called Doves, is made up of multiple flocks of satellites.",
+      "roles": [
+        "producer",
+        "processor"
+      ],
+      "url": "https://docs.planet.com/data/imagery/planetscope/"
+    }
+  ],
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          19.2477876,
+          34.7006096,
+          29.7296986,
+          41.7488862
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-12-11T22:38:32.125Z",
+          "2020-12-14T18:02:31.437Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "links": [
+    {
+      "rel": "root",
+      "href": "https://catalogue.dev-1.hsc.eofarm.com/collections/",
+      "type": "application/json",
+      "title": "Root Catalogue"
+    },
+    {
+      "rel": "self",
+      "href": "https://catalogue.dev-1.hsc.eofarm.com/collections/PlanetScope",
+      "type": "application/json"
+    }
+  ],
+  "assets": {
+    "thumbnail":
+    {
+      "href": "https://eo.belspo.be/sites/default/files/styles/large/public/satellites/dove.jpg",
+      "type": "image/jpeg", 
+      "title": "PlanetScope collection thumbnail",
+      "roles": ["thumbnail"]
+    }
+  }
+}
