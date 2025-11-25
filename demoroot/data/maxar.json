@@ -1,0 +1,72 @@
+{
+  "id": "Maxar",
+  "type": "Collection",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/eo/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/view/v1.0.0/schema.json"
+  ],
+  "stac_version": "1.1.0",
+  "description": "Maxar collection",
+  "title": "Maxar Collection",
+  "keywords": [
+    "Maxar",
+    "Vantor",
+    "WorldView",
+    "collection"
+  ],
+  "providers": [
+    {
+      "name": "Vantor, Inc",
+      "description": "WorldView-3 is an imaging and environment-monitoring satellite from Maxar of the United States which launched on 13 August 2014 and remains operational.",
+      "roles": [
+        "producer",
+        "processor"
+      ],
+      "url": "https://pro-docs.maxar.com/en-us/Tasking/Tasking_intro.htm"
+    }
+  ],
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          19.2477876,
+          34.7006096,
+          29.7296986,
+          41.7488862
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-12-11T22:38:32.125Z",
+          "2020-12-14T18:02:31.437Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "links": [
+    {
+      "rel": "root",
+      "href": "https://catalogue.dev-1.hsc.eofarm.com/collections/",
+      "type": "application/json",
+      "title": "Root Catalogue"
+    },
+    {
+      "rel": "self",
+      "href": "https://catalogue.dev-1.hsc.eofarm.com/collections/Maxar",
+      "type": "application/json"
+    }
+  ],
+  "assets": {
+    "thumbnail":
+    {
+      "href": "https://i0.wp.com/spacenews.com/wp-content/uploads/2024/03/298700-worldview-legion-05.jpeg",
+      "type": "image/jpeg", 
+      "title": "WorldView collection thumbnail",
+      "roles": ["thumbnail"]
+    }
+  }
+}
